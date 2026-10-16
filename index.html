@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smile Cuts & Curls — Beauty Parlour, Pinjore | Rates & Booking</title>
+<meta name="description" content="Smile Cuts & Curls — women's beauty parlour in Pinjore. Facials, waxing, hair, bridal makeup & mehndi. Full rate card. Book on WhatsApp: 098960 37776.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold:#b8860b; --gold-light:#d4a843; --gold-pale:#f5e9c8;
+  --rose:#8b4a6b; --cream:#fdf8f0; --cream-dark:#f5ede0;
+  --charcoal:#2c2c2c; --ink:#3d352e; --muted:#8a7a6b; --border:#e2d3b6;
+}
+* { margin:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; scrollbar-width:thin; scrollbar-color:#cbb58f var(--cream); }
+html::-webkit-scrollbar { width:9px; }
+html::-webkit-scrollbar-track { background:var(--cream-dark); }
+html::-webkit-scrollbar-thumb { background:#cbb58f; border-radius:5px; }
+body { font-family:'Jost',sans-serif; font-weight:300; background:var(--cream); color:var(--charcoal); padding-bottom:84px; }
+h1,h2 { font-family:'Cormorant Garamond',serif; font-weight:500; }
+.rup { font-family:'Jost','Segoe UI',sans-serif; font-weight:500; font-size:.82em; }
+
+/* HERO */
+.hero { position:relative; background:var(--charcoal); color:#fff; text-align:center; padding:66px 22px 52px; overflow:hidden; }
+.hero::before { content:''; position:absolute; inset:0; background:
+  radial-gradient(ellipse at 18% 15%, rgba(184,134,11,.18) 0%, transparent 45%),
+  radial-gradient(ellipse at 85% 85%, rgba(139,74,107,.22) 0%, transparent 45%); }
+.frame { position:absolute; inset:12px; border:1px solid rgba(184,134,11,.5); pointer-events:none; }
+.frame::after { content:''; position:absolute; inset:5px; border:1px solid rgba(184,134,11,.25); }
+.hero > * { position:relative; }
+.eyebrow { font-size:.62rem; letter-spacing:7px; text-transform:uppercase; color:var(--gold-light); }
+.hero h1 { font-size:clamp(2.1rem,7vw,3.4rem); letter-spacing:5px; margin:16px 0 2px; color:#fdf8f0; }
+.divider { display:flex; align-items:center; justify-content:center; gap:10px; margin:12px auto; }
+.divider .line { width:58px; height:1px; background:linear-gradient(90deg,transparent,var(--gold),transparent); }
+.divider .gem { width:5px; height:5px; background:var(--gold); transform:rotate(45deg); }
+.tagline { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.2rem; color:#e8ddd0; }
+.stars { margin-top:14px; font-size:.82rem; letter-spacing:1.5px; color:var(--gold-light); text-transform:uppercase; }
+.btnrow { display:flex; gap:12px; justify-content:center; margin-top:26px; flex-wrap:wrap; }
+.btn { display:inline-flex; align-items:center; gap:9px; padding:14px 30px; border-radius:2px; text-decoration:none; font-weight:500; letter-spacing:2px; font-size:.75rem; text-transform:uppercase; transition:.25s; }
+.btn-wa { background:#1faa55; color:#fff; }
+.btn-call { background:transparent; color:var(--gold-light); border:1px solid rgba(184,134,11,.8); }
+.btn:hover { transform:translateY(-2px); box-shadow:0 10px 26px rgba(0,0,0,.4); }
+.hero .addr { margin-top:22px; font-size:.78rem; letter-spacing:1.5px; color:rgba(253,248,240,.55); text-transform:uppercase; line-height:1.8; padding:0 10px; }
+
+/* NAV */
+nav { position:sticky; top:0; z-index:50; background:rgba(253,248,240,.97); backdrop-filter:blur(10px); border-bottom:1px solid var(--border); padding:11px 4px; font-size:.7rem; letter-spacing:1.5px; white-space:nowrap; overflow-x:auto; scrollbar-width:none; }
+nav::-webkit-scrollbar { display:none; }
+.nav-wrap { position:sticky; top:0; z-index:50; }
+.nav-wrap::after { content:''; position:absolute; right:0; top:0; bottom:0; width:46px; background:linear-gradient(90deg,transparent,rgba(253,248,240,.95)); pointer-events:none; }
+nav a { color:var(--muted); text-decoration:none; text-transform:uppercase; margin:0 11px; padding:4px 2px; transition:.2s; }
+nav a:hover, nav a.active { color:var(--rose); border-bottom:1px solid var(--gold); }
+
+/* MENU */
+main { max-width:860px; margin:0 auto; padding:34px 22px 30px; background:
+  radial-gradient(ellipse at 50% 0%, rgba(184,134,11,.05) 0%, transparent 60%); }
+section.cat { margin:42px 0; scroll-margin-top:64px; }
+.cat h2 { display:flex; align-items:center; gap:16px; font-size:1.55rem; color:var(--rose); justify-content:center; text-align:center; }
+.hline { flex:1; max-width:80px; height:1px; background:linear-gradient(90deg,transparent,var(--gold)); }
+.hline:last-child { background:linear-gradient(90deg,var(--gold),transparent); }
+.items { margin-top:16px; background:#fffdf9; border:1px solid var(--border); border-radius:3px; padding:10px 26px; box-shadow:0 3px 18px rgba(139,74,107,.07); position:relative; }
+.items::after { content:''; position:absolute; inset:4px; border:1px solid rgba(184,134,11,.14); pointer-events:none; }
+.item { display:flex; align-items:baseline; gap:10px; padding:10px 4px; font-size:.94rem; border-bottom:1px solid #f4ecdc; }
+.item:last-child { border-bottom:none; }
+.item .n { color:var(--ink); font-weight:400; }
+.dots { flex:1; border-bottom:1px dotted #dcc9a8; transform:translateY(-4px); opacity:.7; }
+.price { font-family:'Cormorant Garamond',serif; font-size:1.18rem; font-weight:600; color:#8f6a08; white-space:nowrap; }
+.price i { font-style:normal; color:var(--gold-light); margin:0 4px; font-size:.8rem; }
+.price small { font-family:'Jost'; font-weight:300; color:var(--muted); font-size:.64rem; letter-spacing:.5px; }
+.price sup { font-size:.7em; }
+.onask { font-family:'Jost'; font-size:.76rem; font-style:italic; color:var(--muted); font-weight:400; letter-spacing:.5px; }
+
+/* VISIT */
+.visit { background:var(--charcoal); color:var(--cream-dark); margin-top:50px; }
+.visit-in { max-width:860px; margin:0 auto; padding:50px 24px; }
+.visit h2 { color:var(--gold-light); }
+/* wrapped visit rows (stacked, no overflow) */
+.visit .row { display:flex; gap:10px; padding:9px 0; border-bottom:1px solid #4a4038; align-items:flex-start; }
+.visit .row .k { color:var(--gold-light); font-size:.78rem; letter-spacing:1.5px; text-transform:uppercase; min-width:110px; padding-top:3px; }
+.visit .row .v { flex:1; color:#e8ddd0; font-size:.95rem; }
+.visit .n { color:#e8ddd0; }
+.visit .dots { border-color:#57493f; }
+.visit .price { color:var(--gold-light); font-size:1rem; }
+.visit .note { color:rgba(253,248,240,.5); text-align:center; margin-top:20px; font-size:.78rem; font-style:italic; }
+footer { text-align:center; font-size:.7rem; letter-spacing:3px; color:rgba(253,248,240,.35); padding:22px; background:var(--charcoal); text-transform:uppercase; }
+
+/* STICKY CTA */
+.sticky { position:fixed; bottom:0; left:0; right:0; z-index:60; background:var(--charcoal); border-top:1px solid rgba(184,134,11,.6); display:flex; }
+.sticky a { flex:1; text-align:center; padding:16px 8px; color:var(--gold-light); text-decoration:none; font-weight:500; letter-spacing:2.5px; font-size:.74rem; text-transform:uppercase; }
+.sticky a.wa2 { background:#1faa55; color:#fff; }
+
+/* REVEAL */
+.reveal { opacity:0; transform:translateY(16px); transition:opacity .7s ease, transform .7s ease; }
+.reveal.in { opacity:1; transform:none; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity:1; transform:none; transition:none; } html { scroll-behavior:auto; } }
+
+.nav-bar { display:flex; align-items:center; justify-content:space-between; gap:10px; max-width:860px; margin:0 auto; padding:10px 16px; background:rgba(253,248,240,.97); backdrop-filter:blur(10px); border-bottom:1px solid var(--border); }
+.svc-btn { font-family:'Jost'; font-size:.8rem; letter-spacing:2px; text-transform:uppercase; background:var(--charcoal); color:var(--gold-light); border:none; border-radius:3px; padding:11px 20px; cursor:pointer; }
+.nav-quick { font-size:.75rem; letter-spacing:1.5px; color:var(--rose); text-decoration:none; text-transform:uppercase; }
+.sheet-backdrop { position:fixed; inset:0; z-index:100; background:rgba(20,15,10,.55); opacity:0; pointer-events:none; transition:.25s; }
+.sheet-backdrop.open { opacity:1; pointer-events:auto; }
+.sheet { position:absolute; left:0; right:0; bottom:0; max-height:78vh; background:var(--cream); border-radius:16px 16px 0 0; transform:translateY(100%); transition:transform .3s ease; display:flex; flex-direction:column; }
+.sheet-backdrop.open .sheet { transform:none; }
+.sheet-head { display:flex; align-items:center; justify-content:space-between; padding:16px 20px; border-bottom:1px solid var(--border); font-family:'Cormorant Garamond',serif; font-size:1.2rem; color:var(--rose); }
+.sheet-x { background:none; border:1px solid var(--border); border-radius:50%; width:34px; height:34px; font-size:1rem; color:var(--muted); cursor:pointer; }
+.sheet-body { overflow-y:auto; padding:8px 14px 26px; }
+.sheet-link { display:flex; justify-content:space-between; align-items:center; padding:13px 10px; border-bottom:1px solid #f0e6d2; color:var(--charcoal); text-decoration:none; font-size:.98rem; }
+.sheet-link:active { background:var(--cream-dark); }
+.sheet-link .count { color:var(--muted); font-size:.78rem; }
+.nav-wrap { position:sticky; top:0; z-index:50; }
+@media (prefers-reduced-motion: reduce) { .sheet, .sheet-backdrop { transition:none; } }
+
+/* Scroll-to-top */
+#topBtn { position:fixed; right:16px; bottom:76px; z-index:70; width:46px; height:46px; border-radius:50%;
+  background:var(--charcoal); color:var(--gold-light); border:1px solid var(--gold);
+  font-size:1.1rem; cursor:pointer; opacity:0; pointer-events:none; transition:.3s;
+  box-shadow:0 6px 18px rgba(0,0,0,.3); }
+#topBtn.show { opacity:.95; pointer-events:auto; }
+#topBtn:hover { background:#3d352e; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="frame"></div>
+  <div class="eyebrow">Est. Pinjore · Haryana</div>
+  <h1>Smile Cuts &amp; Curls</h1>
+  <div class="divider"><span class="line"></span><span class="gem"></span><span class="line"></span></div>
+  <div class="tagline">Where every visit is a little luxury</div>
+  <div class="stars">★ 4.4 on Google · Women-owned · Open daily till 9 PM</div>
+  <div class="btnrow">
+    <a class="btn btn-wa" href="https://wa.me/919896037776?text=Hi%20Smile%20Cuts%20%26%20Curls!%20I%27d%20like%20to%20book%20an%20appointment.">Book on WhatsApp</a>
+    <a class="btn btn-call" href="tel:+919896037776">Call · 098960 37776</a>
+  </div>
+  <div class="addr">Shop No. 2, Govt. School Road, near M.C. Office, Pinjore 134102</div>
+</header>
+
+
+<div class="nav-wrap"><div class="nav-bar">
+  <button id="svcBtn" class="svc-btn">☰ &nbsp;Services</button>
+  <a class="nav-quick" href="#s0">Rate card ↓</a>
+</div></div>
+
+<div id="svcSheet" class="sheet-backdrop" aria-hidden="true">
+  <div class="sheet" role="dialog" aria-label="All service categories">
+    <div class="sheet-head">
+      <span>All Services · 18 categories</span>
+      <button id="svcClose" class="sheet-x">✕</button>
+    </div>
+    <div class="sheet-body"><a class="sheet-link" href="#s0" data-idx="0"><span>Threading</span><span class="count">7</span></a><a class="sheet-link" href="#s1" data-idx="1"><span>Bleach & D-Tan</span><span class="count">9</span></a><a class="sheet-link" href="#s2" data-idx="2"><span>Waxing — Normal</span><span class="count">9</span></a><a class="sheet-link" href="#s3" data-idx="3"><span>Waxing — Rica (Premium)</span><span class="count">7</span></a><a class="sheet-link" href="#s4" data-idx="4"><span>Cleanups & Facials</span><span class="count">10</span></a><a class="sheet-link" href="#s5" data-idx="5"><span>Advanced Facials</span><span class="count">6</span></a><a class="sheet-link" href="#s6" data-idx="6"><span>Body Care</span><span class="count">1</span></a><a class="sheet-link" href="#s7" data-idx="7"><span>Head Massage</span><span class="count">2</span></a><a class="sheet-link" href="#s8" data-idx="8"><span>Manicure & Pedicure</span><span class="count">6</span></a><a class="sheet-link" href="#s9" data-idx="9"><span>Haircuts</span><span class="count">10</span></a><a class="sheet-link" href="#s10" data-idx="10"><span>Wash & Styling</span><span class="count">8</span></a><a class="sheet-link" href="#s11" data-idx="11"><span>Hair Spa</span><span class="count">4</span></a><a class="sheet-link" href="#s12" data-idx="12"><span>Hair Color</span><span class="count">7</span></a><a class="sheet-link" href="#s13" data-idx="13"><span>Hair Treatments (Short / Medium / Long)</span><span class="count">6</span></a><a class="sheet-link" href="#s14" data-idx="14"><span>Makeup</span><span class="count">6</span></a><a class="sheet-link" href="#s15" data-idx="15"><span>Nails & Add-Ons</span><span class="count">7</span></a><a class="sheet-link" href="#s16" data-idx="16"><span>Mehndi</span><span class="count">4</span></a><a class="sheet-link" href="#s17" data-idx="17"><span>Value Packages</span><span class="count">2</span></a></div>
+  </div>
+</div>
+
+<section class="cat reveal" id="s0">
+  <h2><span class="hline"></span>Threading<span class="hline"></span></h2>
+  <div class="items"><div class="item"><span class="n">Eyebrows</span><span class="dots"></span><span class="price"><span class="rup">₹</span>50</span></div>
+<div class="item"><span class="n">Upper Lip</span><span class="dots"></span><span class="price"><span class="rup">₹</span>30</span></div>
+<div class="item"><span class="n">Chin</span><span class="dots"></span><span class="price"><span class="rup">₹</span>40</span></div>
+<div class="item"><span class="n">Forehead</span><span class="dots"></span><span class="price"><span class="rup">₹</span>40</span></div>
+<div class="item"><span class="n">Side Burns / Side Locks</span><span class="dots"></span><span class="price"><span class="rup">₹</span>50</span></div>
+<div class="item"><span class="n">Eyebrows + Upper Lip</span><span class="dots"></span><span class="price"><span class="rup">₹</span>70</span></div>
+<div class="item"><span class="n">Full Face Threading</span><span class="dots"></span><span class="price"><span class="rup">₹</span>200</span></div></div>
+</section>
+<section class="cat reveal" id="s1">
+  <h2><span class="hline"></span>Bleach & D-Tan<span class="hline"></span></h2>
+  <div class="items"><div class="item"><span class="n">Face Bleach</span><span class="dots"></span><span class="price"><span class="rup">₹</span>200</span></div>
+<div class="item"><span class="n">Fruit Bleach</span><span class="dots"></span><span class="price"><span class="rup">₹</span>250</span></div>
+<div class="item"><span class="n">Gold Bleach</span><span class="dots"></span><span class="price"><span class="rup">₹</span>350</span></div>
+<div class="item"><span class="n">Oxy Bleach</span><span class="dots"></span><span class="price"><span class="rup">₹</span>450</span></div>
+<div class="item"><span class="n">Face & Neck Bleach</span><span class="dots"></span><span class="price"><span class="rup">₹</span>500</span></div>
+<div class="item"><span class="n">Full Body Bleach</span><span class="dots"></span><span class="price"><span class="rup">₹</span>2,500</span></div>
+<div class="item"><span class="n">Face D-Tan</span><span class="dots"></span><span class="price"><span class="rup">₹</span>300</span></div>
+<div class="item"><span class="n">Face & Neck D-Tan</span><span class="dots"></span><span class="price"><span class="rup">₹</span>500</span></div>
+<div class="item"><span class="n">Arms D-Tan</span><span class="dots"></span><span class="price"><span class="rup">₹</span>600</span></div></div>
+</section>
+<section class="cat reveal" id="s2">
+  <h2><span class="hline"></span>Waxing — Normal<span class="hline"></span></h2>
+  <div class="items"><div class="item"><span class="n">Underarms</span><span class="dots"></span><span class="price"><span class="rup">₹</span>100</span></div>
+<div class="item"><span class="n">Upper Lip Wax</span><span class="dots"></span><span class="price"><span class="rup">₹</span>50</span></div>
+<div class="item"><span class="n">Eyebrow Wax</span><span class="dots"></span><span class="price"><span class="rup">₹</span>80</span></div>
+<div class="item"><span class="n">Half Arms</span><span class="dots"></span><span class="price"><span class="rup">₹</span>200</span></div>
+<div class="item"><span class="n">Full Arms</span><span class="dots"></span><span class="price"><span class="rup">₹</span>350</span></div>
+<div class="item"><span class="n">Half Legs</span><span class="dots"></span><span class="price"><span class="rup">₹</span>250</span></div>
+<div class="item"><span class="n">Full Legs</span><span class="dots"></span><span class="price"><span class="rup">₹</span>500</span></div>
+<div class="item"><span class="n">Back Wax</span><span class="dots"></span><span class="price"><span class="rup">₹</span>300</span></div>
+<div class="item"><span class="n">Stomach Wax</span><span class="dots"></span><span class="price"><span class="rup">₹</span>300</span></div></div>
+</section>
+<section class="cat reveal" id="s3">
+  <h2><span class="hline"></span>Waxing — Rica (Premium)<span class="hline"></span></h2>
+  <div class="items"><div class="item"><span class="n">Underarms</span><span class="dots"></span><span class="price"><span class="rup">₹</span>150</span></div>
+<div class="item"><span class="n">Half Arms</span><span class="dots"></span><span class="price"><span class="rup">₹</span>300</span></div>
+<div class="item"><span class="n">Full Arms</span><span class="dots"></span><span class="price"><span class="rup">₹</span>500</span></div>
+<div class="item"><span class="n">Half Legs</span><span class="dots"></span><span class="price"><span class="rup">₹</span>400</span></div>
+<div class="item"><span class="n">Full Legs</span><span class="dots"></span><span class="price"><span class="rup">₹</span>700</span></div>
+<div class="item"><span class="n">Back Wax</span><span class="dots"></span><span class="price"><span class="rup">₹</span>500</span></div>
+<div class="item"><span class="n">Stomach Wax</span><span class="dots"></span><span class="price"><span class="rup">₹</span>500</span></div></div>
+</section>
+<section class="cat reveal" id="s4">
+  <h2><span class="hline"></span>Cleanups & Facials<span class="hline"></span></h2>
+  <div class="items"><div class="item"><span class="n">Basic Cleanup</span><span class="dots"></span><span class="price"><span class="rup">₹</span>350</span></div>
+<div class="item"><span class="n">Fruit Cleanup</span><span class="dots"></span><span class="price"><span class="rup">₹</span>500</span></div>
+<div class="item"><span class="n">D-Tan Cleanup</span><span class="dots"></span><span class="price"><span class="rup">₹</span>600</span></div>
+<div class="item"><span class="n">Fruit Facial</span><span class="dots"></span><span class="price"><span class="rup">₹</span>500</span></div>
+<div class="item"><span class="n">Papaya Facial</span><span class="dots"></span><span class="price"><span class="rup">₹</span>600</span></div>
+<div class="item"><span class="n">Pearl Facial</span><span class="dots"></span><span class="price"><span class="rup">₹</span>600</span></div>
+<div class="item"><span class="n">Wine Facial</span><span class="dots"></span><span class="price"><span class="rup">₹</span>600</span></div>
+<div class="item"><span class="n">Silver Facial</span><span class="dots"></span><span class="price"><span class="rup">₹</span>800</span></div>
+<div class="item"><span class="n">Gold Facial</span><span class="dots"></span><span class="price"><span class="rup">₹</span>900</span></div>
+<div class="item"><span class="n">D-Tan Facial</span><span class="dots"></span><span class="price"><span class="rup">₹</span>500</span></div></div>
+</section>
+<section class="cat reveal" id="s5">
+  <h2><span class="hline"></span>Advanced Facials<span class="hline"></span></h2>
+  <div class="items"><div class="item"><span class="n">Oxy Facial</span><span class="dots"></span><span class="onask">on request</span></div>
+<div class="item"><span class="n">Skin Treatment Facial</span><span class="dots"></span><span class="onask">on request</span></div>
+<div class="item"><span class="n">O3+ Facial</span><span class="dots"></span><span class="onask">on request</span></div>
+<div class="item"><span class="n">Hydra Facial</span><span class="dots"></span><span class="onask">on request</span></div>
+<div class="item"><span class="n">Bridal Glow Facial</span><span class="dots"></span><span class="onask">on request</span></div>
+<div class="item"><span class="n">Korean Glass Skin Facial</span><span class="dots"></span><span class="onask">on request</span></div></div>
+</section>
+<section class="cat reveal" id="s6">
+  <h2><span class="hline"></span>Body Care<span class="hline"></span></h2>
+  <div class="items"><div class="item"><span class="n">Full Body Polishing</span><span class="dots"></span><span class="price"><span class="rup">₹</span>3,500</span></div></div>
+</section>
+<section class="cat reveal" id="s7">
+  <h2><span class="hline"></span>Head Massage<span class="hline"></span></h2>
+  <div class="items"><div class="item"><span class="n">Oil Head Massage</span><span class="dots"></span><span class="price"><span class="rup">₹</span>250</span></div>
+<div class="item"><span class="n">Relaxing Head Massage</span><span class="dots"></span><span class="price"><span class="rup">₹</span>400</span></div></div>
+</section>
+<section class="cat reveal" id="s8">
+  <h2><span class="hline"></span>Manicure & Pedicure<span class="hline"></span></h2>
+  <div class="items"><div class="item"><span class="n">Basic Manicure</span><span class="dots"></span><span class="price"><span class="rup">₹</span>300</span></div>
+<div class="item"><span class="n">Spa Manicure</span><span class="dots"></span><span class="price"><span class="rup">₹</span>600</span></div>
+<div class="item"><span class="n">Deluxe Manicure</span><span class="dots"></span><span class="price"><span class="rup">₹</span>900</span></div>
+<div class="item"><span class="n">Basic Pedicure</span><span class="dots"></span><span class="price"><span class="rup">₹</span>500</span></div>
+<div class="item"><span class="n">Spa Pedicure</span><span class="dots"></span><span class="price"><span class="rup">₹</span>800</span></div>
+<div class="item"><span class="n">Deluxe Pedicure</span><span class="dots"></span><span class="price"><span class="rup">₹</span>1,200</span></div></div>
+</section>
+<section class="cat reveal" id="s9">
+  <h2><span class="hline"></span>Haircuts<span class="hline"></span></h2>
+  <div class="items"><div class="item"><span class="n">Fringe / Bangs Trim</span><span class="dots"></span><span class="price"><span class="rup">₹</span>100</span></div>
+<div class="item"><span class="n">Hair Trim</span><span class="dots"></span><span class="price"><span class="rup">₹</span>200</span></div>
+<div class="item"><span class="n">Kids Haircut</span><span class="dots"></span><span class="price"><span class="rup">₹</span>250</span></div>
+<div class="item"><span class="n">Haircut (Up to Shoulder)</span><span class="dots"></span><span class="price"><span class="rup">₹</span>400</span></div>
+<div class="item"><span class="n">Haircut (Below Shoulder)</span><span class="dots"></span><span class="price"><span class="rup">₹</span>500</span></div>
+<div class="item"><span class="n">U-Cut</span><span class="dots"></span><span class="price"><span class="rup">₹</span>500</span></div>
+<div class="item"><span class="n">V-Cut</span><span class="dots"></span><span class="price"><span class="rup">₹</span>500</span></div>
+<div class="item"><span class="n">Layer Cut</span><span class="dots"></span><span class="price"><span class="rup">₹</span>700</span></div>
+<div class="item"><span class="n">Step Cut</span><span class="dots"></span><span class="price"><span class="rup">₹</span>700</span></div>
+<div class="item"><span class="n">Feather Cut</span><span class="dots"></span><span class="price"><span class="rup">₹</span>800</span></div></div>
+</section>
+<section class="cat reveal" id="s10">
+  <h2><span class="hline"></span>Wash & Styling<span class="hline"></span></h2>
+  <div class="items"><div class="item"><span class="n">Hair Wash</span><span class="dots"></span><span class="price"><span class="rup">₹</span>150</span></div>
+<div class="item"><span class="n">Blow Dry</span><span class="dots"></span><span class="price"><span class="rup">₹</span>250</span></div>
+<div class="item"><span class="n">Hair Wash + Blow Dry</span><span class="dots"></span><span class="price"><span class="rup">₹</span>350</span></div>
+<div class="item"><span class="n">Hair Wash + Styling</span><span class="dots"></span><span class="price"><span class="rup">₹</span>500</span></div>
+<div class="item"><span class="n">Hair Ironing</span><span class="dots"></span><span class="price"><span class="rup">₹</span>500</span></div>
+<div class="item"><span class="n">Hair Curling</span><span class="dots"></span><span class="price"><span class="rup">₹</span>800</span></div>
+<div class="item"><span class="n">Party Hairstyle</span><span class="dots"></span><span class="price"><span class="rup">₹</span>800</span></div>
+<div class="item"><span class="n">Bridal Hairstyle</span><span class="dots"></span><span class="onask">on request</span></div></div>
+</section>
+<section class="cat reveal" id="s11">
+  <h2><span class="hline"></span>Hair Spa<span class="hline"></span></h2>
+  <div class="items"><div class="item"><span class="n">Basic Hair Spa</span><span class="dots"></span><span class="price"><span class="rup">₹</span>700</span></div>
+<div class="item"><span class="n">Anti Hair Fall Spa</span><span class="dots"></span><span class="price"><span class="rup">₹</span>900</span></div>
+<div class="item"><span class="n">Dandruff Control Spa</span><span class="dots"></span><span class="price"><span class="rup">₹</span>900</span></div>
+<div class="item"><span class="n">Deep Conditioning Spa</span><span class="dots"></span><span class="onask">on request</span></div></div>
+</section>
+<section class="cat reveal" id="s12">
+  <h2><span class="hline"></span>Hair Color<span class="hline"></span></h2>
+  <div class="items"><div class="item"><span class="n">Root Touch-Up</span><span class="dots"></span><span class="price"><span class="rup">₹</span>800<sup>+</sup></span></div>
+<div class="item"><span class="n">Global Hair Color</span><span class="dots"></span><span class="price"><span class="rup">₹</span>1,800<sup>+</sup></span></div>
+<div class="item"><span class="n">Fashion Color</span><span class="dots"></span><span class="price"><span class="rup">₹</span>3,000<sup>+</sup></span></div>
+<div class="item"><span class="n">Face Framing Highlights</span><span class="dots"></span><span class="price"><span class="rup">₹</span>1,500<sup>+</sup></span></div>
+<div class="item"><span class="n">Partial Highlights</span><span class="dots"></span><span class="price"><span class="rup">₹</span>2,500<sup>+</sup></span></div>
+<div class="item"><span class="n">Global Highlights</span><span class="dots"></span><span class="price"><span class="rup">₹</span>5,000<sup>+</sup></span></div>
+<div class="item"><span class="n">Balayage</span><span class="dots"></span><span class="price"><span class="rup">₹</span>5,000<sup>+</sup></span></div></div>
+</section>
+<section class="cat reveal" id="s13">
+  <h2><span class="hline"></span>Hair Treatments (Short / Medium / Long)<span class="hline"></span></h2>
+  <div class="items"><div class="item"><span class="n">Keratin</span><span class="dots"></span><span class="price"><span class="rup">₹</span>3000<i>·</i><span class="rup">₹</span>7000<small> short / med / long</small></span></div>
+<div class="item"><span class="n">Smoothening</span><span class="dots"></span><span class="price"><span class="rup">₹</span>4000<i>·</i><span class="rup">₹</span>9000<small> short / med / long</small></span></div>
+<div class="item"><span class="n">Rebonding</span><span class="dots"></span><span class="price"><span class="rup">₹</span>4000<i>·</i><span class="rup">₹</span>9500<small> short / med / long</small></span></div>
+<div class="item"><span class="n">Hair Botox</span><span class="dots"></span><span class="price"><span class="rup">₹</span>3500<i>·</i><span class="rup">₹</span>8000<small> short / med / long</small></span></div>
+<div class="item"><span class="n">Silk Treatment</span><span class="dots"></span><span class="price"><span class="rup">₹</span>3000<i>·</i><span class="rup">₹</span>6500<small> short / med / long</small></span></div>
+<div class="item"><span class="n">Nanoplastia</span><span class="dots"></span><span class="price"><span class="rup">₹</span>5000<i>·</i><span class="rup">₹</span>10000<small> short / med / long</small></span></div></div>
+</section>
+<section class="cat reveal" id="s14">
+  <h2><span class="hline"></span>Makeup<span class="hline"></span></h2>
+  <div class="items"><div class="item"><span class="n">Light Party Makeup</span><span class="dots"></span><span class="price"><span class="rup">₹</span>1,200</span></div>
+<div class="item"><span class="n">Party Makeup</span><span class="dots"></span><span class="price"><span class="rup">₹</span>1,500</span></div>
+<div class="item"><span class="n">HD Party Makeup</span><span class="dots"></span><span class="price"><span class="rup">₹</span>2,500</span></div>
+<div class="item"><span class="n">Engagement Makeup</span><span class="dots"></span><span class="price"><span class="rup">₹</span>4,000</span></div>
+<div class="item"><span class="n">Bridal Makeup</span><span class="dots"></span><span class="price"><span class="rup">₹</span>8,000</span></div>
+<div class="item"><span class="n">HD Bridal Makeup</span><span class="dots"></span><span class="price"><span class="rup">₹</span>12,000</span></div></div>
+</section>
+<section class="cat reveal" id="s15">
+  <h2><span class="hline"></span>Nails & Add-Ons<span class="hline"></span></h2>
+  <div class="items"><div class="item"><span class="n">French Tips</span><span class="dots"></span><span class="price"><span class="rup">₹</span>700</span></div>
+<div class="item"><span class="n">Refill</span><span class="dots"></span><span class="price"><span class="rup">₹</span>800</span></div>
+<div class="item"><span class="n">Removal</span><span class="dots"></span><span class="price"><span class="rup">₹</span>300</span></div>
+<div class="item"><span class="n">Saree Draping</span><span class="dots"></span><span class="price"><span class="rup">₹</span>500</span></div>
+<div class="item"><span class="n">Lehenga Draping</span><span class="dots"></span><span class="price"><span class="rup">₹</span>700</span></div>
+<div class="item"><span class="n">Artificial Eyelashes</span><span class="dots"></span><span class="price"><span class="rup">₹</span>300</span></div>
+<div class="item"><span class="n">Hair Padding</span><span class="dots"></span><span class="price"><span class="rup">₹</span>300</span></div></div>
+</section>
+<section class="cat reveal" id="s16">
+  <h2><span class="hline"></span>Mehndi<span class="hline"></span></h2>
+  <div class="items"><div class="item"><span class="n">Front Hand Mehndi</span><span class="dots"></span><span class="price"><span class="rup">₹</span>250<sup>+</sup></span></div>
+<div class="item"><span class="n">Both Hands Mehndi</span><span class="dots"></span><span class="price"><span class="rup">₹</span>500<sup>+</sup></span></div>
+<div class="item"><span class="n">Full Hand Mehndi</span><span class="dots"></span><span class="price"><span class="rup">₹</span>800<sup>+</sup></span></div>
+<div class="item"><span class="n">Bridal Mehndi</span><span class="dots"></span><span class="price"><span class="rup">₹</span>2,500<sup>+</sup></span></div></div>
+</section>
+<section class="cat reveal" id="s17">
+  <h2><span class="hline"></span>Value Packages<span class="hline"></span></h2>
+  <div class="items"><div class="item"><span class="n">Regular Care Package — threading×4 + upper lip×4 + basic cleanup</span><span class="dots"></span><span class="price"><span class="rup">₹</span>399</span></div>
+<div class="item"><span class="n">Glow Package — basic cleanup + full face threading + face bleach</span><span class="dots"></span><span class="price"><span class="rup">₹</span>649</span></div></div>
+</section>
+</main>
+
+<section class="visit">
+  <div class="visit-in">
+    <h2 style="text-align:center;display:flex;align-items:center;gap:16px;justify-content:center"><span class="hline"></span>Visit Us<span class="hline"></span></h2>
+    <div style="margin-top:18px">
+      <div class="row"><span class="k">Address</span><span class="v">Shop No. 2, Govt. School Road, near M.C. Office, Pinjore, Haryana 134102</span></div>
+      <div class="row"><span class="k">Hours</span><span class="v">Open daily · till 9 PM</span></div>
+      <div class="row"><span class="k">Phone / WhatsApp</span><span class="v">098960 37776</span></div>
+      <div class="row"><span class="k">Walk-ins</span><span class="v">Always welcome</span></div>
+    </div>
+    <p class="note">⁺ prices vary by hair length &amp; product used · bridal &amp; treatment bookings 3–7 days in advance · complimentary consultation before all treatments</p>
+  </div>
+</section>
+<footer>Smile Cuts &amp; Curls · Pinjore</footer>
+
+<button id="topBtn" aria-label="Back to top" title="Back to top">▲</button>
+<div class="sticky">
+  <a href="tel:+919896037776">Call the salon</a>
+  <a class="wa2" href="https://wa.me/919896037776?text=Hi%20Smile%20Cuts%20%26%20Curls!%20I%27d%20like%20to%20book%20an%20appointment.">Book on WhatsApp</a>
+</div>
+
+<script>
+const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && e.target.classList.add('in')), {threshold:.06});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+// scrollspy
+const links = [...document.querySelectorAll('#nav a')];
+const secs = links.map(a => document.querySelector(a.getAttribute('href')));
+const spy = new IntersectionObserver(es => {
+  es.forEach(e => { if (e.isIntersecting) {
+    links.forEach(l => l.classList.remove('active'));
+    const idx = secs.indexOf(e.target);
+    if (idx > -1) links[idx].classList.add('active');
+  }});
+}, {rootMargin:'-30% 0px -60% 0px'});
+secs.forEach(s => s && spy.observe(s));
+
+const bd = document.getElementById('svcSheet');
+document.getElementById('svcBtn').onclick = () => { bd.classList.add('open'); document.body.style.overflow='hidden'; };
+const closeSheet = () => { bd.classList.remove('open'); document.body.style.overflow=''; };
+document.getElementById('svcClose').onclick = closeSheet;
+bd.addEventListener('click', e => { if (e.target === bd) closeSheet(); });
+document.querySelectorAll('.sheet-link').forEach(a => a.addEventListener('click', () => setTimeout(closeSheet, 80)));
+
+// back-to-top
+const topBtn = document.getElementById('topBtn');
+window.addEventListener('scroll', () => {
+  topBtn.classList.toggle('show', window.scrollY > 600);
+}, {passive:true});
+topBtn.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+</script>
+</body>
+</html>
